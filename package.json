@@ -1,0 +1,20 @@
+{
+  "name": "super-skeleton",
+  "version": "1.0.0",
+  "description": "front-end pages skeleton creating",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pearyman/super-skeleton.git"
+  },
+  "keywords": [],
+  "author": "pearyman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pearyman/super-skeleton/issues"
+  },
+  "homepage": "https://github.com/Pearyman/super-skeleton#readme"
+}
