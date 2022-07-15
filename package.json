@@ -1,10 +1,10 @@
 {
   "name": "super-skeleton",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "front-end pages skeleton creating",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup --config rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Pearyman/super-skeleton/issues"
   },
-  "homepage": "https://github.com/Pearyman/super-skeleton#readme"
+  "homepage": "https://github.com/Pearyman/super-skeleton#readme",
+  "devDependencies": {
+    "rollup": "^2.77.0"
+  },
+  "dependencies": {
+    "puppeteer": "^15.4.0"
+  }
 }
