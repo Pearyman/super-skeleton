@@ -21,9 +21,6 @@ new SuperSkeleton({
     cookie: {},
     delay: 5000,
     color: '#efefef',
-    images: {
-      color: '#efefef',
-    },
   }),
 
 ```

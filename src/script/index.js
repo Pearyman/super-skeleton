@@ -42,8 +42,7 @@ window.SuperSkeleton = {
   },
   animationStyle(options) {
     let { color, animationTime = 1 } = options;
-    let style = `
-    
+    let style = `  
       img,
       p,
       button {

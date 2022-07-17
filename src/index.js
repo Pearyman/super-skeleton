@@ -10,21 +10,18 @@ class SuperSkeleton {
 
   apply(compiler) {
     compiler.hooks.done.tap("SuperSkeleton", async () => {
+      // openPage and get html and style
       const { page, browser, result } = await openPage(this.options);
-      // await this.skeleton.init();
-
-      // const skeletonHTML = await this.skeleton.getHTML(this.options.domain);
       console.log(result);
 
       // replace
       const originPath = resolve(this.options.staticDir, "index.html");
       const originHTML = await readFileSync(originPath, "utf8");
       const resultHTML = originHTML.replace('<div id="root"></div>', result);
-
       await writeFileSync(originPath, resultHTML);
 
       // Close the browser
-      // await browser.close();
+      await browser.close();
     });
   }
 }

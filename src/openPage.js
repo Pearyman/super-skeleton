@@ -1,5 +1,4 @@
 const puppeteer = require("puppeteer");
-// const devices = require("puppeteer/DeviceDescriptors");
 const { resolve } = require("path");
 const { sleep } = require("./utils");
 
