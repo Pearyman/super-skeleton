@@ -2,6 +2,7 @@ import { setAttributes } from "../utils";
 import { IMAGE_BASE64 } from "../constants";
 function imagesHandler(element, options) {
   const { width, height } = getComputedStyle(element);
+  const defaultColor = options.color;
   const attrs = {
     width,
     height,
@@ -9,7 +10,7 @@ function imagesHandler(element, options) {
   };
   setAttributes(element, attrs);
 
-  element.style.backgroundColor = options.images.color;
+  element.style.backgroundColor = defaultColor;
 }
 
 export default imagesHandler;
