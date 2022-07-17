@@ -2,7 +2,7 @@
 
 front-end pages skeleton creating
 
-### start
+### setup
 
 > npm install super-skeleton -D
 
@@ -24,3 +24,10 @@ new SuperSkeleton({
   }),
 
 ```
+
+### next feature
+
+- add new config about isAnimation
+- support output base64 or png file
+- add cookie
+- add bin
