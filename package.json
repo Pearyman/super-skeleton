@@ -1,6 +1,6 @@
 {
   "name": "super-skeleton",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "front-end pages skeleton creating",
   "main": "src/index.js",
   "scripts": {
