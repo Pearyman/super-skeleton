@@ -123,7 +123,7 @@
       const styles = Array.from(document.querySelectorAll("style")).map(
         (style) => style.innerHTML || style.innerText
       );
-      console.log(options);
+
       if (options.isAnimation) {
         const animationStyle = this.animationStyle(options);
         const _loadingStyle = document.createElement("style");
