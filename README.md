@@ -28,6 +28,6 @@ new SuperSkeleton({
 ### next feature
 
 - [x] add new config about isAnimation
-- [] support output base64 or png file
-- [] add cookie
-- [] add bin
+- [ ] support output base64 or png file
+- [ ] add cookie
+- [ ] add bin
