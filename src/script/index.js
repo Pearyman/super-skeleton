@@ -70,10 +70,13 @@ window.SuperSkeleton = {
     const styles = Array.from(document.querySelectorAll("style")).map(
       (style) => style.innerHTML || style.innerText
     );
-    const animationStyle = this.animationStyle(options);
-    const _loadingStyle = document.createElement("style");
-    _loadingStyle.innerHTML = animationStyle;
-    document.querySelector("#root").appendChild(_loadingStyle);
+
+    if (options.isAnimation) {
+      const animationStyle = this.animationStyle(options);
+      const _loadingStyle = document.createElement("style");
+      _loadingStyle.innerHTML = animationStyle;
+      document.querySelector("#root").appendChild(_loadingStyle);
+    }
 
     const html = document.body.innerHTML;
 

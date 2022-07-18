@@ -95,8 +95,7 @@
     },
     animationStyle(options) {
       let { color, animationTime = 1 } = options;
-      let style = `
-    
+      let style = `  
       img,
       p,
       button {
@@ -124,15 +123,14 @@
       const styles = Array.from(document.querySelectorAll("style")).map(
         (style) => style.innerHTML || style.innerText
       );
-      const animationStyle = this.animationStyle(options);
-      const _loadingStyle = document.createElement("style");
-      _loadingStyle.innerHTML = animationStyle;
-      document.querySelector("#root").appendChild(_loadingStyle);
+      console.log(options);
+      if (options.isAnimation) {
+        const animationStyle = this.animationStyle(options);
+        const _loadingStyle = document.createElement("style");
+        _loadingStyle.innerHTML = animationStyle;
+        document.querySelector("#root").appendChild(_loadingStyle);
+      }
 
-      // document.querySelector("#root").classList.add("super-skeleton-loading");
-      // document
-      //   .querySelector(".super-skeleton-loading")
-      //   .setAttribute("style", animationStyle);
       const html = document.body.innerHTML;
 
       return { html, styles };
